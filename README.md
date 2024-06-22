@@ -28,3 +28,16 @@ This notebook calculates the entropy of dependency pairs in parsed sentences. Th
 - **Data Processing**: Utilizes `Counter` and `numpy` for calculating probabilities and entropy.
 - **Libraries Used**: `numpy`, `pandas`, `collections`.
 
+### 3. Tree Visualisation (`Tree_visualisation.ipynb`)
+
+#### Overview
+
+This tool processes CoNLL-U formatted linguistic dependency data and visualizes them as dependency trees in LaTeX format. It utilizes Python and NetworkX for graph manipulation and LaTeX for rendering the trees.
+
+#### Features
+
+- **File Upload**: Allows users to upload CoNLL-U formatted files using an interactive file upload widget.
+- **Parsing and Processing**: Parses uploaded files to extract sentences, nodes, and edges, and constructs dependency trees using NetworkX.
+- **Dependency Measures**: Computes measures related to dependencies, such as direction and distance between nodes (optional feature).
+- **LaTeX Code Generation**: Generates LaTeX code (`dependency` and `deptext` environments) for each sentence's dependency tree, suitable for visualization.
+- **Usage**: Outputs the generated LaTeX code to the console or as a string, which users can directly integrate into their LaTeX documents.
